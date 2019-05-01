@@ -1,0 +1,48 @@
+
+
+\chapter{preliminary result}
+
+\setlength{\arrayrulewidth}{50mm}
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.1}
+\setlength{\arrayrulewidth}{0.7mm}
+\begin{center}
+\centering
+\footnotesize\setlength{\tabcolsep}{1.5pt}
+\begin{tabular}{|c|c|c|ccccc|cc|}
+\hline
+\multirow{2}{3em}{name} & \multirow{2}{6em}{formula} & \multirow{2}{3em}{group} &
+\multicolumn{5}{c|}{\bfseries Day Of Year} & \multicolumn{2}{c|}{\bfseries R square} \\
+\cline{4-10}
+&&& 228 & 219 & 212 & 205 & 191 & poly 1 & poly 2\\
+\hline
+\multirow{5}{40pt}{NDVI} & \multirow{5}{105pt}{ \[\frac{R_{nir} - R _{red}}{R_{nir} + R _{red}}\]}
+  & ndviAavg & 0.462 & 0.551 & 0.552 & 0.465 & 0.357 & 0.027 & 0.846\\
+ && ndviBavg & 0.475 & 0.482 & 0.546 & 0.470 & 0.344 & 0.636 & 0.873\\
+ && ndviCavg & 0.459 & 0.473 & 0.537 & 0.472 & 0.329 & 0.410 & 0.780\\
+ && ndviDavg & 0.432 & 0.466 & 0.509 & 0.415 & 0.301 & 0.427 & 0.743\\
+ && ndviEavg & 0.393 & 0.472 & 0.523 & 0.445 & 0.324 & 0.373 & 0.735\\
+ \hline
+\multirow{5}{40pt}{SAVI} & \multirow{5}{105pt}{ \[\frac{(R_{nir} - R _{red})(1+0.5)}{R_{nir} + R _{red} + 0.5}\]}
+  & saviAavg & 0.261 & 0.391 & 0.425 & 0.304 & 0.535 & 0.869 & 0.927\\
+ && saviBavg & 0.281 & 0.327 & 0.400 & 0.339 & 0.514 & 0.890 & 0.906\\
+ && saviCavg & 0.271 & 0.310 & 0.381 & 0.340 & 0.492 & 0.943 & 0.950\\
+ && saviDavg & 0.204 & 0.285 & 0.331 & 0.277 & 0.451 & 0.661 & 0.768\\
+ && saviEavg & 0.199 & 0.294 & 0.359 & 0.307 & 0.485 & 0.487 & 0.742\\
+\hline
+\multirow{5}{40pt}{OSAVI} & \multirow{5}{105pt}{ \[\frac{(R_{nir} - R _{red})(1+0.16)}{R_{nir} + R _{red} + 0.16}\]}
+  & osaviAavg & 0.202 & 0.303 & 0.329 & 0.235 & 0.414 & 0.869 & 0.927\\
+ && osaviBavg & 0.218 & 0.253 & 0.310 & 0.263 & 0.398 & 0.889 & 0.906\\
+ && osaviCavg & 0.210 & 0.240 & 0.295 & 0.263 & 0.381 & 0.943 & 0.950\\
+ && osaviDavg & 0.158 & 0.221 & 0.256 & 0.215 & 0.349 & 0.661 & 0.768\\
+ && osaviEavg & 0.154 & 0.228 & 0.278 & 0.238 & 0.376 & 0.488 & 0.742\\
+\hline
+\multirow{5}{40pt}{RVI} & \multirow{5}{105pt}{ \[\frac{R _{nir}}{R_{red}}\]}
+  & rviAavg & 0.299 & 0.253 & 0.243 & 0.316 & 0.485 & 0.184 & 0.748\\
+ && rviBavg & 0.301 & 0.310 & 0.247 & 0.310 & 0.505 & 0.776 & 0.873\\
+ && rviCavg & 0.320 & 0.329 & 0.258 & 0.320 & 0.524 & 0.550 & 0.770\\
+ && rviDavg & 0.325 & 0.332 & 0.281 & 0.363 & 0.557 & 0.635 & 0.768\\
+ && rviEavg & 0.376 & 0.339 & 0.269 & 0.343 & 0.527 & 0.591 & 0.754\\
+\hline
+\end{tabular}
+\end{center}

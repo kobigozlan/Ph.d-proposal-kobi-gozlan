@@ -1,0 +1,32 @@
+
+\documentclass[a4paper,12pt,twoside]{report}
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{latexsym}
+\usepackage{setspace}
+\usepackage[toc]{appendix}
+\usepackage{biblatex}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{booktabs}
+
+\input{thesis.sty}
+\addbibresource {Chapter/bibliography.bib}
+
+\begin{document}
+
+\input{Chapter/cover.tex}
+\input{Chapter/abstract}
+\input{Chapter/acknowledgements}
+\body
+\input{Chapter/introduction}
+\input{Chapter/methodology.tex}
+\input{Chapter/preliminary_result.tex}
+
+\cite{RN1} \cite{RN2} \cite{RN3} \cite{RN4} \cite{RN5} \cite{RN6}
+\printbibliography
+
+%\input{appendices/appendix}
+
+\end{document}
